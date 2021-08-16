@@ -10,7 +10,18 @@ import SignInOrUp from './screens/SignInOrUp';
 import SignUp from './screens/SignUp';
 import Welcome from './screens/Welcome'
 import Auth from './Auth';
+import { createTheme } from '@material-ui/core/styles';
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#e53935',
+    },
+    secondary: {
+      main: '#ffee58'
+    },
+  },
+});
 class App extends React.Component {
     render() {
         return (
